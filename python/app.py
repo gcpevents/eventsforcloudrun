@@ -1,29 +1,19 @@
-import base64
 import os
+import json
 
-import flask
-from mock import MagicMock
+from flask import Flask, request
 
-import main
+app = Flask(__name__)
 
-FUNCTIONS_TOPIC = os.getenv("FUNCTIONS_TOPIC")
+@app.route('/', methods=['GET'])
+def hello_world():
+    target = os.environ.get('TARGET', 'World')
+    return 'Hello {}!\n'.format(target)
 
-# import os
-# import json
+@app.route('/', methods=['POST'])
+def event_handler():
+    print(json.dumps(request.headers))
+    return 'Got event'
 
-# from flask import Flask, request
-
-# app = Flask(__name__)
-
-# @app.route('/', methods=['GET'])
-# def hello_world():
-#     target = os.environ.get('TARGET', 'World')
-#     return 'Hello {}!\n'.format(target)
-
-# @app.route('/', methods=['POST'])
-# def event_handler():
-#     print(json.dumps(request.headers))
-#     return 'Got event'
-
-# if __name__ == "__main__":
-#     app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
+if __name__ == "__main__":
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
