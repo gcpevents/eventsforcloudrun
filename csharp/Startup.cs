@@ -39,8 +39,8 @@ namespace HelloEvents
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    var target = Environment.GetEnvironmentVariable("TARGET");
-                    await context.Response.WriteAsync($"Hello {target}!!!\n");
+                    var target = Environment.GetEnvironmentVariable("TARGET") ?? "World";
+                    await context.Response.WriteAsync($"Hello {target}!\n");
                 });
 
                 endpoints.MapPost("/", async context =>
