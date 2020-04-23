@@ -1,6 +1,6 @@
 # Events for Cloud Run – Java Quickstart
 
-This folder contains a quickstart app for using Events for Cloud Run with Java.
+This folder contains a Spring Boot app for using Events for Cloud Run with Java.
 
 ## Setup
 

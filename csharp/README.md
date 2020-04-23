@@ -1,6 +1,6 @@
 # Events for Cloud Run – C# Quickstart
 
-This folder contains a quickstart app for using Events for Cloud Run with C#.
+This folder contains a .NET app for using Events for Cloud Run with C#.
 
 ## Deploy to Cloud Run
 

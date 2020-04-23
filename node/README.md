@@ -1,6 +1,6 @@
 # Events for Cloud Run – Node Quickstart
 
-This folder contains a quickstart app for using Events for Cloud Run with Node.
+This folder contains an Express app for using Events for Cloud Run with Node.
 
 ## Deploy to Cloud Run
 

@@ -1,6 +1,6 @@
 # Events for Cloud Run – Python Quickstart
 
-This folder contains a quickstart app for using Events for Cloud Run with Python.
+This folder contains a Flask app for using Events for Cloud Run with Python.
 
 ## Deploy to Cloud Run
 

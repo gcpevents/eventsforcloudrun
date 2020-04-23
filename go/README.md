@@ -1,6 +1,6 @@
 # Events for Cloud Run – Go Quickstart
 
-This folder contains a quickstart app for using Events for Cloud Run with Go.
+This folder contains a Net/HTTP app for using Events for Cloud Run with Go.
 
 ## Setup
 
